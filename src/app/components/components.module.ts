@@ -4,19 +4,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GraficoHorizontalComponent } from './grafico-horizontal/grafico-horizontal.component';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   declarations: [
     NavbarComponent,
     GraficoHorizontalComponent
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    GraficoHorizontalComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ]
 })
 export class ComponentsModule { }
